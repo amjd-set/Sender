@@ -1,5 +1,5 @@
 import telebot
-
+from hh import keep_alive
 API_TOKEN = '8015146138:AAHbXQmpMqGtCP7943gaj9EuEBjHuitL6mE'
 YOUR_CHAT_ID = '7506329433'
 
@@ -21,4 +21,5 @@ def start(message):
 ارسل رسالتك ليتم تحويلها. ''')
 
 if __name__ == "__main__":
+    keep_alive() 
     bot.polling(none_stop=True)
